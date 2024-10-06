@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable Form</title>
+    <link rel="stylesheet" href="index.css"> <!-- External CSS for styling -->
+</head>
+<body>
+    <div class="container">
+        <form id="timetableForm">
+        <h1>Get Your Class Timetable</h1>
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="" disabled selected>Select your branch</option>
+                <option value="CSE">Computer Science</option>
+                <option value="IT">IT</option>
+                <!--
+                <option value="ECE">Electronics</option>
+                <option value="BT">BT</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+                <!-- Add more branches as needed -->
+                -->
+            </select>
+
+            <label for="section">Section:</label>
+            <select id="section" name="section" required>
+                <option value="" disabled selected>Select your section</option>
+                <option value="A">Section A</option>
+                <option value="B">Section B</option>
+                <option value="C">Section C</option>
+                <!-- Add more sections as needed -->
+            </select>
+
+            <button type="submit">Get Timetable</button>
+        </form>
+    </div>
+
+    <script>
+    document.getElementById('timetableForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent page from refreshing
+    
+    const branch = document.getElementById('branch').value;
+    const section = document.getElementById('section').value;
+
+    // Redirect to the timetable page, passing the values as query parameters
+    window.location.href = `timetable.html?branch=${branch}&section=${section}`;
+});
+    </script>
+</body>
+</html>

@@ -1,2 +1,2 @@
 # Timetable
-A platform for timetable for My college students
+ it's just for my clg timetable
