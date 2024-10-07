@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Timetable</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>Your Class Timetable</h1>
+        <div id="timetable"></div>
+    </div>
+
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            const branch = params.get('branch');
+            const section = params.get('section');
+            return { branch, section };
+        }
+
+        // Function to display the timetable based on branch and section
+        function displayTimetable(branch, section) {
+            const timetableDiv = document.getElementById('timetable');
+            
+            // Example timetable data (this can come from a database or external file)
+            const timetables = {
+                'CSE_A': `<h2>Computer Science - Section A</h2>
+                          <img src="seca.png">`,
+                'CSE_B': `<h2>Computer Science - Section B</h2>
+                          <img src="secb.png">`,
+                'CSE_C': `<h2>Computer Science - Section B</h2>
+                          <img src="secc.png">`,
+                'IT_A':`<h2>Informal Technology- Section A</h2>
+                          <img src="ita.png">`,
+            
+                // Add more timetables for other branches and sections
+            };
+
+            const key = `${branch}_${section}`;
+            if (timetables[key]) {
+                timetableDiv.innerHTML = timetables[key];
+            } else {
+                timetableDiv.innerHTML = `<p>No timetable found for ${branch} - Section ${section}</p>`;
+            }
+        }
+
+        // Get the query parameters and display the corresponding timetable
+        const { branch, section } = getQueryParams();
+        if (branch && section) {
+            displayTimetable(branch, section);
+        } else {
+            document.getElementById('timetable').innerHTML = '<p>Invalid input! Please go back and submit the form again.</p>';
+        }
+    </script>
+</body>
+</html>
