@@ -11,11 +11,24 @@
 select{
     background-color: rgb(104, 140, 204);
 }
-.container{
-    
-
-}
 #timetableForm{
     background-color: royalblue;
     padding: 295px;
 }
+@media only screen and (max-width: 1000px) {
+    /* Styles for devices with a maximum width of 600 pixels */
+    body {
+      font-size: 14px;
+    }
+    h1{
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        
+    }
+    #timetableForm{
+        background-color: royalblue;
+        padding: 265px 0;
+        align-content: center;
+    }
+  }
