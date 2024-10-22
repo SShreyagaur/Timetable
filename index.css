@@ -15,10 +15,11 @@ select{
     background-color: royalblue;
     padding: 295px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 858px) {
     /* Styles for devices with a maximum width of 600 pixels */
     body {
       font-size: 14px;
+      align-items: center;
     }
     h1{
         font-size: 20px;
