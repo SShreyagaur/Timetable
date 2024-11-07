@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Timetable</title>
     <link rel="stylesheet" href="styles.css"> <!-- External CSS for styling -->
-     
 </head>
 <body>
- <div class="container">
+    <div class="container">
         <h1>Your Class Timetable</h1>
         <div id="timetable"></div>
     </div>
+
     <script>
         // Function to get query parameters from the URL
         function getQueryParams() {
@@ -35,10 +35,6 @@
                           <img src="secc.png">`,
                 'IT_A':`<h2>Informal Technology- Section A</h2>
                           <img src="ita.png">`,
-                'IT_B':`<h2>Informal Technology- Section A</h2>
-                          <img src="ita.png">`,
-                'IT_C':`<h2>Informal Technology- Section A</h2>
-                          <img src="ita.png">`,
             
                 // Add more timetables for other branches and sections
             };
@@ -59,9 +55,5 @@
             document.getElementById('timetable').innerHTML = '<p>Invalid input! Please go back and submit the form again.</p>';
         }
     </script>
-    <footer>
-        <p> Shreyagaurindoearthian@gmail.com </p>
-       <p>&copy; 2024 Made by Shreya Gaur</p>
-  </footer>
 </body>
 </html>

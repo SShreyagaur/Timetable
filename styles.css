@@ -1,30 +1,12 @@
 *{
-    background-color:#c7e2ef;
+    background-color: rgb(215, 231, 239);
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-h1{
-    background-color: #222323;
-    color: #fff;
-    padding: 20px 30px;
 }
 img{
     width: 60%;
     height:70%;
 }
-  
-footer{
-    background-color: #282828;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    align-items: center;
-  }
-p{
-    background-color: #282828;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    align-items: center;
-  }
 @media only screen and (max-width: 1000px) {
     img{
         align-items: center;
