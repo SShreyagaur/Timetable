@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>timetable</title>
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="hcst.jpg" alt="Logo">
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-contact">
+        <p>Email: Shreyagaurindoearthian@gmail.com & Sanjaysanjayuagarwal32@gmail.com </p>
+        <p>Phone: +9528812209 , 7983531428</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Made by Sanjay Agarwal and Shreya Gaur .</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
